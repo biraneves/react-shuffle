@@ -3,23 +3,23 @@ import { getNewId } from "../services/idService"
 export const people = [
     {
         'name': 'Carol',
-        'photo': '../../public/photos/carol.jpg',
+        'photo': 'photos/carol.jpg',
     },
     {
         'name': 'Gabi',
-        'photo': '../../public/photos/gabi.jpg',
+        'photo': 'photos/gabi.jpg',
     },
     {
         'name': 'Kazukas',
-        'photo': '../../public/photos/kazukas.jpg',
+        'photo': 'photos/kazukas.jpg',
     },
     {
         'name': 'Rayssa',
-        'photo': '../../public/photos/rayssa.jpg',
+        'photo': 'photos/rayssa.jpg',
     },
     {
         'name': 'Renata',
-        'photo': '../../public/photos/renata.jpg',
+        'photo': 'photos/renata.jpg',
     },
 ]
     .map(item => {
