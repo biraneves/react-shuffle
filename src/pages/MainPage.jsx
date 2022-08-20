@@ -9,6 +9,7 @@ import Button from "../components/Button";
 import Deck from "../components/Deck";
 import Card from "../components/Card";
 import Loading from "../components/Loading";
+import _ from "lodash";
 
 export default function MainPage() {
     const [allCards, setAllCards] = useState(people);
@@ -21,7 +22,7 @@ export default function MainPage() {
         setTimeout(() => {
             setLoading(false);
             setAllCards(shuffledCards);
-        }, 3000);
+        }, _.random(1000, 3000));
     }
 
     function handleResetButtonClick() {
@@ -30,7 +31,7 @@ export default function MainPage() {
         setTimeout(() => {
             setLoading(false);
             setAllCards(people);
-        }, 1000);
+        }, _.random(500, 1000));
     }
 
     let mainJsx = (
