@@ -34,7 +34,7 @@ export default function MainPage() {
     }
 
     let mainJsx = (
-        <div className="flex justify-center my-4">
+        <div className="flex justify-center items-center mb-4 mt-48">
             <Loading />
         </div>
     );

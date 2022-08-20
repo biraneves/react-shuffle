@@ -1,7 +1,7 @@
-import { ClipLoader } from "react-spinners";
+import { SyncLoader } from "react-spinners";
 
 export default function Loading() {
     return (
-        <ClipLoader />
+        <SyncLoader color='silver' />
     );
 }
