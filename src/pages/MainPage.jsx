@@ -17,6 +17,7 @@ export default function MainPage() {
 
     function handleShuffleButtonClick() {
         setLoading(true);
+        setAllCards(useState(people));
         const shuffledCards = helperShuffleArray(allCards);
 
         setTimeout(() => {
