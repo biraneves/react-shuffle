@@ -4,4 +4,5 @@ export const rituais = [
     'Daily - Livre',
     'Daily - VND',
     'Fechamento',
+    'Sem ritual',
 ];
