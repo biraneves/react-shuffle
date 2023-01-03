@@ -1,32 +1,28 @@
-import { getNewId } from '../services/idService';
+import { getNewId } from "../services/idService"
 
 export const people = [
     {
-        name: 'Carol Dolescki',
-        photo: 'photos/carol_dolescki.jpg',
+        'name': 'Carol',
+        'photo': 'photos/carol.jpg',
     },
     {
-        name: 'Carol Valadão',
-        photo: 'photos/carol_valadao.jpg',
+        'name': 'Gabi',
+        'photo': 'photos/gabi.jpg',
     },
     {
-        name: 'Larissa',
-        photo: 'photos/larissa.jpg',
+        'name': 'Kazukas',
+        'photo': 'photos/kazukas.jpg',
     },
     {
-        name: 'Nicoll',
-        photo: 'photos/nicoll.jpg',
+        'name': 'Rayssa',
+        'photo': 'photos/rayssa.jpg',
     },
     {
-        name: 'Priscila',
-        photo: 'photos/priscila.jpg',
-    },
-    {
-        name: 'Renata',
-        photo: 'photos/renata.jpg',
+        'name': 'Renata',
+        'photo': 'photos/renata.jpg',
     },
 ]
-    .map((item) => {
-        return { id: getNewId(), ...item };
+    .map(item => {
+        return {id: getNewId(), ...item};
     })
     .sort((a, b) => a.name.localeCompare(b.name));
