@@ -17,7 +17,7 @@ export default function MainPage() {
     const originalPeople = [];
     people.map((item) => originalPeople.push(item));
 
-    function handleShuffleButtonClick() {
+    function handleShuffleButtonClick(originalPeople) {
         setLoading(true);
         setAllCards(originalPeople);
         const shuffledCards = helperShuffleArray(allCards);
