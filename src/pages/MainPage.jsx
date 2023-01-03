@@ -14,10 +14,12 @@ import _ from 'lodash';
 export default function MainPage() {
     const [allCards, setAllCards] = useState(people);
     const [loading, setLoading] = useState(false);
+    const originalPeople = [];
+    people.map((item) => originalPeople.push(item));
 
     function handleShuffleButtonClick() {
         setLoading(true);
-        setAllCards(people);
+        setAllCards(originalPeople);
         const shuffledCards = helperShuffleArray(allCards);
 
         setTimeout(() => {
